@@ -50,8 +50,23 @@
 <option value="other">Other</option>
 </select>
 </td>
-<td><input type="radio" name="gender" value="Female">Female </td>
 </tr>
+
+<tr>
+<td>Gender</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>This class is:</td>
+<td>
+<td><input type="checkbox" name="class" value="awsome">Too Awsome <br>
+<td><input type="checkbox" name="class" value="outstanding">Too Outstanding <br>
+<td><input type="checkbox" name="class" value="exciting">Too Exciting <br>
+ </td>
+</tr>
+
 
 </tbody>
 </table>
