@@ -23,12 +23,34 @@
 
 <tr>
 <td>Email</td>
-<td><input type="text" name="email" value="" size="50"></td>
+<td><input type="email" name="email" value="" size="50"></td>
 </tr>
 
 <tr>
 <td>Age</td>
-<td><input type="text" name="age" value="" size="50"></td>
+<td><input type="text" name="age" value="" size="50" required></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" value="Male">Male </td>
+<td><input type="radio" name="gender" value="Female">Female </td>
+</tr>
+
+<tr>
+<td>Where were you born?</td>
+<td>
+<select name="state">
+<option value="">Choose a state...</option>
+<option value="IA">Iowa</option>
+<option value="IL">Illinois</option>
+<option value="MN">Minesota</option>
+<option value="MO">Missouri</option>
+<option value="NE">Nebraska</option>
+<option value="other">Other</option>
+</select>
+</td>
+<td><input type="radio" name="gender" value="Female">Female </td>
 </tr>
 
 </tbody>

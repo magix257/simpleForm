@@ -11,7 +11,11 @@
 String firstName = request.getParameter("first");
 String lastName = request.getParameter("last");
 String email = request.getParameter("email");
-String age = request.getParameter("age");
+int age =Integer.parseInt(request.getParameter("age"));
+int agePlusOne= age +1;
+String gender = request.getParameter("gender");
+String state = request.getParameter("state");
+
 %>
 
 
@@ -39,6 +43,21 @@ String age = request.getParameter("age");
 <tr>
 <td>User Age</td>
 <td><%= age %></td>
+</tr>
+
+<tr>
+<td>Next year you will be:</td>
+<td><%= agePlusOne %></td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td><%= gender %></td>
+</tr>
+
+<tr>
+<td>State:</td>
+<td><%= state %></td>
 </tr>
 
 </tbody>
