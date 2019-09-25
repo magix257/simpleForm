@@ -60,6 +60,54 @@ String state = request.getParameter("state");
 <td><%= state %></td>
 </tr>
 
+<tr>
+<td>This class:</td>
+<td><% 
+String[] classEval;
+
+classEval = request.getParameterValues("classEval");
+
+if (classEval != null)
+{
+	for (int i=0; i<classEval.length; i++)
+	{
+		out.println(" " + classEval[i] + " ");
+	}
+	
+}
+
+
+else 
+	
+	out.println("none");
+
+%></td>
+</tr>
+
+<tr>
+<td>Pets:</td>
+<td><% 
+String[] pet;
+
+pet = request.getParameterValues("pet");
+
+if (pet != null)
+{
+	for (int i=0; i<pet.length; i++)
+	{
+		out.println(" " + pet[i] + " ");
+	}
+	
+}
+
+
+else 
+	
+	out.println("none");
+
+%></td>
+</tr>
+
 </tbody>
 </table>
 

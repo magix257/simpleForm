@@ -61,15 +61,25 @@
 <tr>
 <td>This class is:</td>
 <td>
-<td><input type="checkbox" name="class" value="awsome">Too Awsome <br>
-<td><input type="checkbox" name="class" value="outstanding">Too Outstanding <br>
-<td><input type="checkbox" name="class" value="exciting">Too Exciting <br>
+<td><input type="checkbox" name="classEval" value="awsome">Too Awsome <br>
+<td><input type="checkbox" name="classEval" value="outstanding">Too Outstanding <br>
+<td><input type="checkbox" name="classEval" value="exciting">Too Exciting <br>
  </td>
 </tr>
 
 
 </tbody>
 </table>
+
+<br><br>
+
+<fieldset>
+<legend>What pets do you have?</legend>
+<input type="checkbox" name="pet" value="cat">Cat
+<input type="checkbox" name="pet" value="dog">Dog
+<input type="checkbox" name="pet" value="fish">Fish
+<input type="checkbox" name="pet" value="bird">Bird
+</fieldset>
 
 <input type="reset" value="Clear" id="clear">
 <input type="submit" value="Submit" id="submit">
