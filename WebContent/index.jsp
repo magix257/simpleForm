@@ -1,90 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Simple Form Demo</title>
-</head>
 <body>
-<h1>Simple Form Demonstration</h1>
-<form name="demoForm" action="results.jsp" method="post">
-<table>
-<tbody>
-<tr>
-<td>First Name</td>
-<td><input type="text" name="first" value="" size="50"></td>
-</tr>
 
-<tr>
-<td>Last Name</td>
-<td><input type="text" name="last" value="" size="50"></td>
-</tr>
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
 
-<tr>
-<td>Email</td>
-<td><input type="email" name="email" value="" size="50"></td>
-</tr>
-
-<tr>
-<td>Age</td>
-<td><input type="text" name="age" value="" size="50" required></td>
-</tr>
-
-<tr>
-<td>Gender</td>
-<td><input type="radio" name="gender" value="Male">Male </td>
-<td><input type="radio" name="gender" value="Female">Female </td>
-</tr>
-
-<tr>
-<td>Where were you born?</td>
-<td>
-<select name="state">
-<option value="">Choose a state...</option>
-<option value="IA">Iowa</option>
-<option value="IL">Illinois</option>
-<option value="MN">Minesota</option>
-<option value="MO">Missouri</option>
-<option value="NE">Nebraska</option>
-<option value="other">Other</option>
-</select>
-</td>
-</tr>
-
-<tr>
-<td>Gender</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td>This class is:</td>
-<td>
-<td><input type="checkbox" name="classEval" value="awsome">Too Awsome <br>
-<td><input type="checkbox" name="classEval" value="outstanding">Too Outstanding <br>
-<td><input type="checkbox" name="classEval" value="exciting">Too Exciting <br>
- </td>
-</tr>
-
-
-</tbody>
-</table>
-
-<br><br>
-
-<fieldset>
-<legend>What pets do you have?</legend>
-<input type="checkbox" name="pet" value="cat">Cat
-<input type="checkbox" name="pet" value="dog">Dog
-<input type="checkbox" name="pet" value="fish">Fish
-<input type="checkbox" name="pet" value="bird">Bird
-</fieldset>
-
-<input type="reset" value="Clear" id="clear">
-<input type="submit" value="Submit" id="submit">
-
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
 </form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
 
 </body>
 </html>
