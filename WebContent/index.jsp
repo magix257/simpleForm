@@ -1,23 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simple Form Demo</title>
+</head>
 <body>
+<h1>Simple Form Demonstration</h1>
+<form name="demoForm" action="results.jsp" method="post">
+<table>
+<tbody>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="first" value="" size="50"></td>
+</tr>
 
-<h2>The datalist Element</h2>
-<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="last" value="" size="50"></td>
+</tr>
 
-<form action="/action_page.php">
-  <input list="browsers" name="browser">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
-  <input type="submit">
+<tr>
+<td>Email</td>
+<td><input type="text" name="email" value="" size="50"></td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td><input type="text" name="age" value="" size="50"></td>
+</tr>
+
+</tbody>
+</table>
+
+<input type="reset" value="Clear" id="clear">
+<input type="submit" value="Submit" id="submit">
+
 </form>
-
-<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
 
 </body>
 </html>
